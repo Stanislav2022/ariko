@@ -1,35 +1,21 @@
-import { Routes, Route, NavLink } from "react-router-dom";
-import styled from "styled-components";
-import Home from "../pages/Home";
-import Contacts from "../pages/Contacts";
-import Products from "../pages/Products";
+import { lazy } from "react";
+import { Routes, Route } from "react-router-dom";
 
-const StyledLink = styled(NavLink)`
-  color: black;
-  &.active {
-    color: orange;
-  }
-`;
+const Home = lazy(() => import("../pages/Home"));
+const Products = lazy(() => import("../pages/Products"));
+const ProductDetails = lazy(() => import("../pages/ProductDetails"));
+const Contacts = lazy(() => import("../pages/Contacts"));
 
 export const App = () => {
   return (
-    <div>
-      <div>
-        <nav>
-          <StyledLink to="/" end>
-            Home
-          </StyledLink>
-          <StyledLink to="/contacts">Contacts</StyledLink>
-          <StyledLink to="/products">Products</StyledLink>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<Home />} />
+        <Route path="products" element={<Products />} />
+        <Route path="products/:id" element={<ProductDetails />} />
+        <Route path="contacts" element={<Contacts />} />
+      </Route>
+    </Routes>
   );
 };
 
