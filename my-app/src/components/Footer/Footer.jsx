@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   FaViber,
   FaTelegram,
@@ -7,22 +7,22 @@ import {
   FaMapMarkerAlt,
   FaPhoneVolume,
   FaEnvelope,
-} from 'react-icons/fa';
-import css from './Futer.module.css';
-import axios from 'axios';
+} from "react-icons/fa";
+import css from "./Footer.module.css";
+import axios from "axios";
 
-const Futer = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
+const Footer = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmite = async e => {
+  const handleSubmite = async (e) => {
     e.preventDefault();
 
-    const serviceID = 'service_7ktkszr';
-    const templateID = 'template_xb34ooe';
-    const publicKey = '3kJzSAR1yKsS_S6I_';
+    const serviceID = "service_7ktkszr";
+    const templateID = "template_xb34ooe";
+    const publicKey = "3kJzSAR1yKsS_S6I_";
 
     const data = {
       service_id: serviceID,
@@ -31,18 +31,18 @@ const Futer = () => {
       template_params: {
         from_name: name,
         from_email: email,
-        to_name: 'Stas',
+        to_name: "Stas",
         message: message,
         phone: phone,
       },
     };
 
     try {
-      await axios.post('https://api.emailjs.com/api/v1.0/email/send', data);
-      setName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
+      await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
     } catch (error) {}
   };
 
@@ -62,7 +62,7 @@ const Futer = () => {
                   type="type"
                   name="name"
                   value={name}
-                  onChange={e => setName(e.target.value)}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className={css.full_name}>
@@ -72,7 +72,7 @@ const Futer = () => {
                   type="type"
                   name="email"
                   value={email}
-                  onChange={e => setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className={css.full_name}>
@@ -82,7 +82,7 @@ const Futer = () => {
                   type="tel"
                   name="phone"
                   value={phone}
-                  onChange={e => setPhone(e.target.value)}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
               <div className={css.full_name}>
@@ -133,7 +133,7 @@ const Futer = () => {
                   placeholder="Повідомлення"
                   name="message"
                   value={message}
-                  onChange={e => setMessage(e.target.value)}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
               <div className={css.btnfeedback}>
@@ -175,7 +175,7 @@ const Futer = () => {
                     >
                       <span className={css.contacts__icon}>
                         <FaEnvelope size="30px" />
-                      </span>{' '}
+                      </span>{" "}
                       buhsn@ukr.net
                     </a>
                   </li>
@@ -196,7 +196,7 @@ const Futer = () => {
                   </a>
                 </li>
                 <li className={css.useful__item}>
-                  {' '}
+                  {" "}
                   <a
                     className={css.useful__link}
                     href="https://portal.pfu.gov.ua/"
@@ -268,4 +268,4 @@ const Futer = () => {
     </div>
   );
 };
-export default Futer;
+export default Footer;
