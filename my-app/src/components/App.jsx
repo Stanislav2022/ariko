@@ -16,6 +16,7 @@ export const App = () => {
         <Route path="products/:id" element={<ProductDetails />} />
         <Route path="contacts" element={<Contacts />} />
       </Route>
+      s{" "}
     </Routes>
   );
 };
