@@ -1,12 +1,11 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import styled from "styled-components";
-import Home from "path/to/pages/Home";
-import Contacts from "path/to/pages/Contacts";
-import Products from "path/to/pages/Products";
+import Home from "../pages/Home";
+import Contacts from "../pages/Contacts";
+import Products from "../pages/Products";
 
 const StyledLink = styled(NavLink)`
   color: black;
-
   &.active {
     color: orange;
   }
@@ -33,3 +32,5 @@ export const App = () => {
     </div>
   );
 };
+
+export default App;
