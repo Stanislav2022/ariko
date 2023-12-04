@@ -89,7 +89,7 @@ const Footer = () => {
                 <ul className={css.social__list}>
                   <li className={css.social__item}>
                     <a
-                      href="viber://chat?number=%2B380980091004"
+                      href="viber://chat?number=%2B380972985641"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -97,17 +97,13 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className={css.social__item}>
-                    <a
-                      href="https://t.me/business_zvit"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <a href="https://t.me" target="_blank" rel="noreferrer">
                       <FaTelegram />
                     </a>
                   </li>
                   <li className={css.social__item}>
                     <a
-                      href="https://www.facebook.com/business.zvit?locale=uk_UA"
+                      href="https://www.facebook.com"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -116,7 +112,7 @@ const Footer = () => {
                   </li>
                   <li className={css.social__item}>
                     <a
-                      href="https://wa.me/380980091004"
+                      href="https://wa.me/380972985641"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -143,7 +139,7 @@ const Footer = () => {
           </form>
           <div className={css.footer__info}>
             <div className={css.footer__contacts}>
-              <h3 className={css.foter__title}> БІЗНЕС ЗВІТ</h3>
+              <h3 className={css.foter__title}> ARI CO</h3>
               <address className={css.footer__address}>
                 <ul className={css.contacts__list}>
                   <li className={css.contacts__item}>
@@ -156,16 +152,15 @@ const Footer = () => {
                       <span className={css.contacts__icon}>
                         <FaMapMarkerAlt size="30px" />
                       </span>
-                      Київська обл., м.Бровари, вул.Сергія Москаленка, буд.16,
-                      оф. 303
+                      Київська обл., м.Бровари, вул.Сергія Москаленка, буд.16
                     </a>
                   </li>
                   <li className={css.contacts__item}>
-                    <a className={css.contacts__link} href="tell:+380980091004">
+                    <a className={css.contacts__link} href="tell:+380972985641">
                       <span className={css.contacts__icon}>
                         <FaPhoneVolume size="30px" />
                       </span>
-                      +38 098 009 10 04
+                      +38 097 298 56 41
                     </a>
                   </li>
                   <li className={css.contacts__item}>
@@ -176,57 +171,11 @@ const Footer = () => {
                       <span className={css.contacts__icon}>
                         <FaEnvelope size="30px" />
                       </span>{" "}
-                      buhsn@ukr.net
+                      ari_ko@ukr.net
                     </a>
                   </li>
                 </ul>
               </address>
-            </div>
-            <div className={css.footer__contacts}>
-              <h3 className={css.foter__title}> Корисні Посилання</h3>
-              <ul className={css.contacts__list}>
-                <li className={css.useful__item}>
-                  <a
-                    className={css.useful__link}
-                    href="https://cabinet.tax.gov.ua/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Кабінет ДФС
-                  </a>
-                </li>
-                <li className={css.useful__item}>
-                  {" "}
-                  <a
-                    className={css.useful__link}
-                    href="https://portal.pfu.gov.ua/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Кабінет ПФУ
-                  </a>
-                </li>
-                <li className={css.useful__item}>
-                  <a
-                    className={css.useful__link}
-                    href="https://usr.minjust.gov.ua/content/free-search"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Безкоштовний пошук у ЄДР
-                  </a>
-                </li>
-                <li className={css.useful__item}>
-                  <a
-                    className={css.useful__link}
-                    href="https://webrro.tax.gov.ua/account/login?ReturnUrl=%2F"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Програмний ПРРО від ДФС
-                  </a>
-                </li>
-              </ul>
             </div>
             <div className={css.footer__contacts}>
               <h3 className={css.foter__title}> Розділи</h3>
@@ -238,12 +187,7 @@ const Footer = () => {
                 </li>
                 <li className={css.useful__item}>
                   <a className={css.useful__link} href="/">
-                    Раді допомогти
-                  </a>
-                </li>
-                <li className={css.useful__item}>
-                  <a className={css.useful__link} href="/">
-                    Розрахунок ціни
+                    Товари
                   </a>
                 </li>
                 <li className={css.useful__item}>
