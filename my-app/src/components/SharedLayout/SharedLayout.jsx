@@ -1,30 +1,30 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
-import { Container, Header, Logo, Link } from "./SharedLayout.styled";
+import { NavLink } from "react-router-dom";
 
 export const SharedLayout = () => {
   return (
-    <Container>
-      <Header>
-        <Logo>
+    <div>
+      <div>
+        <div>
           <span role="img" aria-label="computer icon">
             💻
           </span>{" "}
           ПП "АРІ КО"
-        </Logo>
+        </div>
         <nav>
-          <Link to="/" end>
+          <NavLink to="/" end>
             Home
-          </Link>
-          <Link to="/products">Products</Link>
-          <Link to="/contacts">Сontacts</Link>
+          </NavLink>
+          <NavLink to="/products">Products</NavLink>
+          <NavLink to="/contacts">Сontacts</NavLink>
         </nav>
-      </Header>
+      </div>
       <Suspense fallback={<div>Loading page...</div>}>
         <Outlet />
       </Suspense>
       <Footer />
-    </Container>
+    </div>
   );
 };
