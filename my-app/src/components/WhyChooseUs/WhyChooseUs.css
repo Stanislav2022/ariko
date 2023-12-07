@@ -1,0 +1,75 @@
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    padding-left: 30px ;
+    padding-right: 15px;
+}
+.titlepage {
+    text-align: center;
+    margin-right: 30px;
+}
+.titlepage__text {
+    font-size: 28px;
+}
+
+.hottest__box {
+    position: relative;
+    background-color: #f4cb1e;
+    max-width: 300px;
+    padding: 15px 15px;
+    font-size: 27px;
+}
+.hottest__box::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: -30px;
+    width: 31px;
+    height: 100%;
+    background: url(../../images/h_cross.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center center;
+}
+.hottest__p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .hottest__box {
+            max-width: 450px;
+        }
+    .titlepage__text{
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding-bottom: 80px;
+    }
+    .hottest__box {
+        max-width: 635px;
+        padding: 50px 50px;
+    }
+    .titlepage__text {
+        font-size: 48px;
+            line-height: 62px;
+        font-weight: bold;
+        
+    }
+}
+

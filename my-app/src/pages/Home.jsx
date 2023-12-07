@@ -1,13 +1,13 @@
+import React from "react";
+import Hero from "../components/Hero/Hero";
+import AboutUs from "../components/AboutUs/AboutUs";
+import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 const Home = () => {
   return (
     <main>
-      <h1>Welcome</h1>
-      <img src="https://via.placeholder.com/960x240" alt="" />
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-        laboriosam placeat incidunt rem illum animi nemo quibusdam quia
-        voluptatum voluptate.
-      </p>
+      <Hero />
+      <AboutUs />
+      <WhyChooseUs />
     </main>
   );
 };
