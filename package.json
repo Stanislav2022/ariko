@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "ariko",
   "version": "0.1.0",
   "private": true,
-    "homepage": "https://stanislav2022.github.io/ariko/my-app/",
+    "homepage": "https://stanislav2022.github.io/ariko/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
