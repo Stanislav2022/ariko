@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ariko/static/css/main.4db06be7.css",
+    "main.js": "/ariko/static/js/main.558da4b1.js",
+    "static/css/928.53ca31ba.chunk.css": "/ariko/static/css/928.53ca31ba.chunk.css",
+    "static/js/928.88d217d6.chunk.js": "/ariko/static/js/928.88d217d6.chunk.js",
+    "static/js/265.8f10bbd2.chunk.js": "/ariko/static/js/265.8f10bbd2.chunk.js",
+    "static/js/199.782b91e8.chunk.js": "/ariko/static/js/199.782b91e8.chunk.js",
+    "static/js/910.4bbc9eea.chunk.js": "/ariko/static/js/910.4bbc9eea.chunk.js",
+    "static/js/807.8be56409.chunk.js": "/ariko/static/js/807.8be56409.chunk.js",
+    "static/js/728.87320de4.chunk.js": "/ariko/static/js/728.87320de4.chunk.js",
+    "static/media/image1.webp": "/ariko/static/media/image1.a8cef3f1ddac2d79d159.webp",
+    "index.html": "/ariko/index.html",
+    "main.4db06be7.css.map": "/ariko/static/css/main.4db06be7.css.map",
+    "main.558da4b1.js.map": "/ariko/static/js/main.558da4b1.js.map",
+    "928.53ca31ba.chunk.css.map": "/ariko/static/css/928.53ca31ba.chunk.css.map",
+    "928.88d217d6.chunk.js.map": "/ariko/static/js/928.88d217d6.chunk.js.map",
+    "265.8f10bbd2.chunk.js.map": "/ariko/static/js/265.8f10bbd2.chunk.js.map",
+    "199.782b91e8.chunk.js.map": "/ariko/static/js/199.782b91e8.chunk.js.map",
+    "910.4bbc9eea.chunk.js.map": "/ariko/static/js/910.4bbc9eea.chunk.js.map",
+    "807.8be56409.chunk.js.map": "/ariko/static/js/807.8be56409.chunk.js.map",
+    "728.87320de4.chunk.js.map": "/ariko/static/js/728.87320de4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4db06be7.css",
+    "static/js/main.558da4b1.js"
+  ]
+}
